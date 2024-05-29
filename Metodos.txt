@@ -1,0 +1,45 @@
+Endpoint para jugar el juego
+Método: POST
+URL: https://localhost:7144/api/game/play
+Body
+{
+    "Player1Choice": "par",
+    "Player2Choice": "impar"
+}
+
+
+Endpoint para obtener el estado del juego
+Método: GET
+URL: https://localhost:7144/api/game/status
+Endpoint para reiniciar el juego
+Método: POST
+URL: https://localhost:7144/api/game/reset
+
+
+numero
+nombre de usuario
+
+
+Pasos
+1. SetPlayer1Name
+https://localhost:7144/api/game/setPlayer1Name
+Body
+{
+  "Name": "pollito"
+}
+
+2. Start/PlayGame
+https://localhost:7144/api/game/play
+Body
+{
+  "Player1Choice": "par"
+}
+
+3. GetGameStatus
+https://localhost:7144/api/game/status
+
+4.GetGameDetails (historial)
+https://localhost:7144/api/game/state
+
+5.ResetGame
+https://localhost:7144/api/game/reset
